@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "unp.h": "c",
+        "config.h": "c",
+        "time.h": "c",
+        "types.h": "c",
+        "socket.h": "c",
+        "addrinfo.h": "c"
+    }
+}
