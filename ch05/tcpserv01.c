@@ -20,7 +20,7 @@ int main(int argc, char **argv)
 
     for (;;)
     {
-        connfd = accept(listenfd, (SA *)&servaddr, &clilen);
+        connfd = Accept(listenfd, (SA *)&servaddr, &clilen);
         if ((childpid = Fork()) == 0)
         {
             Close(listenfd);
