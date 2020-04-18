@@ -1,5 +1,6 @@
 # unix network programing
-《unix network programings》书中的示例及基于示例的实验
+《unix network programings》书中示例及基于示例的实验。
+示例实验步骤位于各章节*lab.md*。lab中涉及的的概念及关注的点会标注其在书中的页码。例如第五章的*lab.md*。
 # examples
 编译chapter05服务器程序
 
@@ -12,6 +13,7 @@ gcc ch05/tcpcserv01.c -o tcpcserv01 -Ilib -L. -lunp
 `
 gcc ch05/tcpcli01.c -o tcpcli01 -Ilib -L. -lunp
 `
+进行实验...
 # contents:
 - ch05：tcp回射客户/服务器程序
     - tcp回射客户/服务器程序
