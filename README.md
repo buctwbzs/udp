@@ -2,7 +2,12 @@
 《unix network programings》书中示例及基于示例的实验。
 示例实验步骤位于各章节*lab*。lab中涉及的的概念及关注的点会标注其在书中的页码。例如第五章的[lab](https://github.com/buctwbzs/unp/blob/master/ch05/lab.md)。
 # examples
-编译chapter05服务器程序
+chapter05服务器程序
+
+1.切换至对应tag: ch05/tcp
+
+
+2.编译
 
 `
 gcc ch05/tcpcserv01.c -o tcpcserv01 -Ilib -L. -lunp
@@ -17,7 +22,7 @@ gcc ch05/tcpcli01.c -o tcpcli01 -Ilib -L. -lunp
 进行实验...
 # contents:
 - ch05：tcp回射客户/服务器程序
-    - tcp回射客户/服务器程序
+    - tcp回射客户/服务器程序,tag: ch05/tcp
     - 信号处理
 - ch06
     - IO复用:select和poll函数

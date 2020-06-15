@@ -88,3 +88,4 @@ tcp        0      0 localhost:46108         localhost:9877       TIME_WAIT
 注：
 - TIME_WAIT状态(p37)
 - MSL为最长分节生命周期(p37)。
+
