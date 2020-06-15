@@ -25,7 +25,7 @@ int main(int argc, char const *argv[])
         err_quit("connect error");
     }
 
-    while (n = read(sockfd, recvline, MAXLINE) > 0)
+    while ((n = read(sockfd, recvline, MAXLINE)) > 0)
     {
         recvline[n] = 0;
         if (fputs(recvline, stdout) == EOF)
