@@ -13,6 +13,7 @@ int main(int argc, char **argv)
     pid_t childpid;
     socklen_t clilen;
     struct sockaddr_in cliaddr, servaddr;
+    void sig_chld(int);
 
     if ((listenfd = socket(AF_INET, SOCK_STREAM, 0)) < 0)
         exit(1);
@@ -27,6 +28,8 @@ int main(int argc, char **argv)
 
     if (listen(listenfd, LISTENQ) < 0)
         exit(1);
+
+    Signal(SIGCHLD, sig_chld);
 
     for (;;)
     {
