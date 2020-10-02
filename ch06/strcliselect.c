@@ -16,7 +16,7 @@ void str_cli(FILE *fp, int sockfd)
 
     for (;;)
     {
-        fputs("loop...", stdout);
+        fputs("loop...\n", stdout);
         if (stdinof == 0)
             FD_SET(fileno(fp), &read_set);
 
